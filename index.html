@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html>
+<title>Rijul Saini, Ph.D. - Researcher, AI and Software Engineering</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="css/myStyle.css">
+
+
+<body>
+  <!-- Main navigation bar for Large screen -->
+  <div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align w3-block w3-black" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
+        href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#home" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-black w3-hover-white">About me</a>
+      <a href="#research" class="w3-bar-item w3-button w3-hide-small w3-black w3-hover-white">Research Interests</a>
+      <a href="#news" class="w3-bar-item w3-button w3-hide-small w3-black w3-hover-white">Latest News</a>
+      <a href="#service" class="w3-bar-item w3-button w3-hide-small w3-black w3-hover-white">Community Service</a>
+      <a href="#publication" class="w3-bar-item w3-button w3-hide-small w3-black w3-hover-white">Publications</a>
+      <a href="#teaching" class="w3-bar-item w3-button w3-hide-small w3-black w3-hover-white">Work Experience</a>
+      <a href="#blogs" class="w3-bar-item w3-button w3-hide-small w3-black w3-hover-white">Blogs</a>
+      <a href="data/myResume.pdf" class="w3-bar-item w3-button w3-hide-small w3-black w3-hover-white">Resume</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-black w3-hover-white">Contact</a>
+    </div>
+
+    <!-- Main navigation bar for Small screen -->
+    <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-black w3-hide w3-hide-large w3-hide-medium">
+      <a href="#about" class="w3-bar-item w3-button w3-black w3-hover-white" onclick="toggleFunction()">About me</a>
+      <a href="#research" class="w3-bar-item w3-button w3-hover-white" onclick="toggleFunction()">Research Interests</a>
+      <a href="#news" class="w3-bar-item w3-button w3-hover-white" onclick="toggleFunction()">Latest News</a>
+      <a href="#service" class="w3-bar-item w3-button w3-hover-white" onclick="toggleFunction()">Community Service</a>
+      <a href="#publication" class="w3-bar-item w3-button w3-hover-white" onclick="toggleFunction()">Publications</a>
+      <a href="#teaching" class="w3-bar-item w3-button w3-hover-white" onclick="toggleFunction()">Work Experience</a>
+      <a href="#blogs" class="w3-bar-item w3-button w3-hover-white" onclick="toggleFunction()">Blogs</a>
+      <a href="data/myResume.pdf" class="w3-bar-item w3-button w3-hover-white" onclick="toggleFunction()">Resume</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hover-white" onclick="toggleFunction()">Contact</a>
+    </div>
+  </div>
+
+   <!-- Main Container (Research Section) -->
+   <!-- <div href="/img/RijulSaini-CV.pdf" id="resume">
+  </div> -->
+
+
+
+  <!-- First Parallax Effect for background images -->
+  <!-- <div class="bgimg-1 w3-display-container w3-opacity-min w3-animate-fading" id="home"
+    style="background-image: url('img/models_presentation.jpeg'); min-height:100%">
+    <div class="w3-display-bottomright" style="white-space:nowrap;">
+      <span class="w3-center w3-padding-small w3-black w3-large w3-wide w3-text-white w3-hide-small"><b>Models Research Paper Presentation, Montreal'2023</b></span>
+    </div>
+  </div> -->
+  <!-- <div class="w3-container w3-content"> -->
+  <div class="bgimg-1 w3-display-container w3-opacity-min w3-animate-fading" id="home"
+    style="background-image: url('img/poster_presentation.jpg'); min-height:100%">
+    <div class="w3-display-bottomright" style="font-size: .5vw;">
+      <span class="w3-center w3-padding-small w3-black w3-large w3-wide w3-text-white"><b>MODELS Conference'22,
+        Montreal</b></span>
+    </div>
+  </div>
+  <div class="bgimg-1 w3-display-container w3-opacity-min w3-animate-fading" id="home"
+    style="background-image: url('img/bellairs.jpg'); min-height:100%">
+    <div class="w3-display-bottomright" style="font-size: .5vw;">
+      <span class="w3-center w3-padding-small w3-black w3-large w3-wide w3-text-white"><b>Data and Models'19,
+          Bellairs</b></span>
+    </div>
+  </div>
+
+  <div class="bgimg-1 w3-display-container w3-opacity-min w3-animate-fading" id="home"
+    style="background-image: url('img/saltise.jpg'); min-height:100%">
+    <div class="w3-display-bottomright" style="font-size: .5vw;">
+      <span class="w3-center w3-padding-small w3-black w3-large w3-wide w3-text-white"><b>Volunteering, Saltise Conference'19 
+          (source-saltise.ca)</span>
+    </div>
+  </div>
+
+  <div class="bgimg-1 w3-display-container w3-opacity-min w3-animate-fading" id="home"
+    style="background-image: url('img/icse.jpg'); min-height:100%">
+    <div class="w3-display-bottomright" style="font-size: .5vw;">
+      <span class="w3-center w3-padding-small w3-black w3-large w3-wide w3-text-white"><b>ICSE Conference'19 
+        (source-ICSE)</span>
+    </div>
+  </div>
+
+  <button class="w3-button w3-black w3-display-left" onclick="prevSlide()">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="nextSlide()">&#10095;</button>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(0)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+<!-- </div> -->
+
+  <!-- Main Container Starts here (About Section) -->
+  <div class="w3-content w3-container w3-padding-small" id="about">
+    <h3 class="w3-center"><br><b>ABOUT ME</b></h3>
+    <h2 class="w3-center"><em><b>I am Rijul Saini</b></em></h2>
+    <div class="w3-row">
+      <div class="w3-col m4 w3-left-align w3-padding-large">
+        <img src="img/cropped_profile.jpeg" class="w3-image w3-hover-shadow" alt="Photo of Me"
+          style="width:350px;margin-top:10%;border-radius:50%">
+      </div>
+
+      <div class="w3-col m8 w3-padding-small" style="text-align:justify">
+        <h5>I received my Ph.D. degree from the <a href="https://www.mcgill.ca/ece/">Department of Electrical and Computer Engineering (ECE)</a> at <a href="https://www.mcgill.ca/">McGill University</a>. I completed my doctoral studies
+          under the supervision of <a href="http://www.ece.mcgill.ca/~gmussb1/index.htm">Professor Gunter
+            Mussbacher</a>. My doctoral research aims to build a recommendation system for assisting practitioners such as requirements
+            engineers and software engineers in quickly prototyping domain models from informal requirements which are expressed in natural language. This recommendation system uses
+            Natural Language Processing and Machine Learning techniques to extract and process domain information. Furthermore, the system constructs queryable trace models in the form of knowledge graphs to explain decisions and
+            facilitate system-user interactions.<br></u></h5>
+
+        <h5><br>I joined McGill University as a Master's student in Fall-2017 and then fast-tracked into Ph.D. in Winter-2019. Along with my doctoral studies, I gained industrial experience while working with the National Research Council Canada and Bombardier Aerospace as a student intern. During these internship experiences, I used my skills in Machine Learning, Data Science, and Software Engineering to develop internal tools and perform predictive analytics. Before coming to McGill University, I worked as a software analyst at Accenture (2013 to 2017). I received the degree of Bachelor of Technology (Computer Science and Engineering) in 2013.
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Main Container (Research Section) -->
+  <div class="w3-content w3-container w3-padding-small" id="research">
+    <h3 class="w3-center"><br><b>RESEARCH INTERESTS</b></h3>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m12 w3-padding-small">
+      <h5>
+        <ul class="b">
+          <li>Machine Learning</li>
+          <li>Natural Language Processing</li>
+          <li>Data Science</li>
+          <li>Recommendation Systems</li>
+          <li>Model-Driven Requirements Engineering</li>
+        </ul>
+      </u></h5>
+    </div>
+  </div>
+
+    <!-- Main Container (Research Section) -->
+    <div class="w3-content w3-container w3-padding-small" id="news">
+      <h3 class="w3-center"><br><b>Latest News</b></h3>
+  
+      <!-- Hide this text on small devices -->
+      <div class="w3-col m12 w3-padding-small">
+        <h5>
+          <ul class="b">
+            <li>Invited Reviewer for the Science of Computer Programming Journal, February 2023</li>
+            <li>Received the Silver medal 🥈 in the ACM Student Research Competition, October 2022</li>
+            <li>Our research paper has been selected for presentation and publication at <a href="https://conf.researchr.org/track/models-2022/models-2022-technical-track?#event-overview">MODELS'2022, Montreal, Canada</a></li>   
+            </ul>
+        </u></h5>
+      </div>
+    </div>
+
+
+    <!-- Main Container (Service Section) -->
+    <div class="w3-content w3-container w3-padding-small" id="service">
+      <h3 class="w3-center"><br><b>Community Service</b></h3>
+  
+      <!-- Hide this text on small devices -->
+      <div class="w3-col m12 w3-padding-small">
+        <h5>
+          <ul class="b">
+            <li> Invited Reviewer for the Science of Computer Programming Journal, February 2023</li>
+            <li>General Co-Chair for the 12th International Model-Driven Requirements Engineering <a href="http://www.modre2022.ece.mcgill.ca/index.htm">(MoDRE)</a> Workshop at <a href="https://conf.researchr.org/home/RE-2022">RE'22</a></li>
+            <li>Program Committee Member for Tools and Demonstrations track in 25th International Conference on Model Driven Engineering Languages and Systems <a href="https://conf.researchr.org/home/models-2022">(MODELS'22)</a></li>
+            <li>Program Committee Member of <a href="https://mde-intelligence.github.io/">MDE Intelligence Workshop</a> at MODELS'21</li>
+            <li>Reviewer of <a href="https://www.sosym.org/">SoSyM Journal</a> Papers</li>
+            <li>Judge in Summer Undergraduate Research in Engineering <a href="https://www.mcgill.ca/engineering/students/undergraduate/research">(SURE)</a> poster presentation at McGill University</li>
+            <li>Student volunteer at <a href="https://conf.researchr.org/home/RE-2021">RE'2021</a> and <a href="https://conf.researchr.org/home/models-2021">MODELS'21</a></li>
+          </ul>
+        </u></h5>
+      </div>
+    </div>
+
+
+  <!-- Main Container (Publication Section) -->
+  <div class="w3-content w3-container w3-padding-small" id="publication">
+    <h3 class="w3-center"><br><b>PUBLICATIONS</b></h3>
+    <div class="tab">
+      <button class="tablinks" onclick="p_openTab(event, 'p_all')">All</button>
+      <button class="tablinks" onclick="p_openTab(event, 'p_2022')" id="p_defaultOpen">2022</button>
+      <button class="tablinks" onclick="p_openTab(event, 'p_2021')">2021</button>
+      <button class="tablinks" onclick="p_openTab(event, 'p_2020')">2020</button>
+      <button class="tablinks" onclick="p_openTab(event, 'p_2019')">2019</button>
+    </div>
+
+    <div id="p_all" class="p_tabcontent">
+      <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <ol type="1">
+        <li>
+          <h6>Saini, R., Mussbacher, G., Guo, J.L.C., and Kienzle, J. (2022) Machine Learning-based Incremental Learning
+            in Interactive Domain Modelling. Technical Track, ACM/IEEE 25th International Conference on Model Driven Engineering Languages and Systems (MODELS '22), October 23--28, 2022, Montreal, QC, Canada, ACM.
+            <a href="http://dx.doi.org/10.1145/3550355.3552421">DOI: 10.1145/3550355.3552421</a>. <b>[Acceptance
+              rate: 27%]</b>
+          </h6>
+        </li>
+
+
+        <li>
+          <h6>
+            Saini, R. (2022) Automated, Traceable, and Interactive Domain Modelling. ACM/IEEE 25th International Conference on Model Driven Engineering Languages and Systems (MODELS '22 Companion), October 23--28, 2022, Montreal, QC, Canada, ACM.
+            <a href="https://doi.org/10.1145/3550356.3552372">DOI: 10.1145/3550356.3552372</a>. <b> ACM Silver Medalist 🥈</b>
+          </h6>
+        </li>
+
+        <li>
+          <h6>Saini, R., Mussbacher, G., Guo, J.L.C., and Kienzle, J. (2021) Automated, interactive, and traceable
+            domain modelling empowered by artificial intelligence. Software & Systems Modeling (SoSyM), Springer.
+            <a href="https://link.springer.com/article/10.1007/s10270-021-00942-6">DOI: 10.1007/s10270-021-00942-6</a>.
+          </h6>
+        </li>
+        <li>
+          <h6>Saini, R., Mussbacher, G., Guo, J.L.C., and Kienzle, J. (2021) DoMoBOT: An AI-Empowered Bot for Automated
+            and
+            Interactive Domain Modelling. Tool Demo, ACM/IEEE 24th International Conference on Model Driven Engineering
+            Languages
+            and Systems (MODELS 2021), Demo and Poster Sessions, Fukuoka, Japan, October 2021, ACM.
+            <a href="http://dx.doi.org/10.1109/MODELS-C53483.2021.00090">DOI: 10.1109/MODELS-C53483.2021.00090</a>.
+          </h6>
+        </li>
+
+        <li>
+          <h6>
+            Saini, R. and Mussbacher, G. (2021) Towards Conflict-Free Collaborative Modelling using VS Code Extensions.
+            1st
+            International Hands-on Workshop on Collaborative Modeling (HoWCoM 2021), Fukuoka, Japan, October 2021. ACM
+            <a href="https://doi.org/10.1109/MODELS-C53483.2021.00013">DOI: 10.1109/MODELS-C53483.2021.00013</a>.
+          </h6>
+        </li>
+
+        <li>
+          <h6>
+            Saini, R., Mussbacher, G., Guo, J.L.C., and Kienzle, J. (2021) Automated Traceability for Domain Modelling
+            Decisions
+            Empowered by Artificial Intelligence. 29th IEEE International Requirements Engineering Conference (RE 2021),
+            Notre Dame,
+            South Bend, Indiana, USA, September 2021. IEEE CS, 173-184.
+            <a href="https://doi.org/10.1109/RE51729.2021.00023">DOI: 10.1109/RE51729.2021.00023</a>.
+            <b>[Acceptance Rate - 29%]</b>.
+          </h6>
+        </li>
+
+        <li>
+          <h6>
+            Saini, R., Mussbacher, G., Guo, J.L.C., and Kienzle, J. (2021) DoMoBOT: A Modelling Bot for Automated and
+            Traceable
+            Domain Modelling. Tool Demo, 29th IEEE International Requirements Engineering Conference (RE 2021), Demo and
+            Poster
+            Sessions, Notre Dame, South Bend, Indiana, USA, September 2021, IEEE CS.
+            <a href="http://dx.doi.org/10.1109/RE51729.2021.00054">DOI: 10.1109/RE51729.2021.00054</a>.
+          </h6>
+        </li>
+
+        <li>
+          <h6>
+            Combemale, B., Kienzle, J., Mussbacher, G., Ali, H., Amyot, D., Bagherzadeh, M., Batot, E., Bencomo, N.,
+            Benni, B., Bruel,
+            J.-M., Cabot, J., Cheng, B.H.C., Collet, P., Engels, G., Heinrich, R., Jézéquel, J.-M., Koziolek, A.,
+            Mosser, S., Reussner, R.,
+            Sahraoui, H., Saini, R., Sallou, J., Stinckwich, S., Syriani, E., and Wimmer, M. (2021) A Hitchhiker’s Guide
+            to Model-Driven
+            Engineering for Data-Centric Systems. IEEE Software, IEEE 38(4):71–84.
+            <a href="https://ieeexplore.ieee.org/document/9094197/">DOI: 10.1109/MS.2020.2995125</a>.
+          </h6>
+        </li>
+
+        <li>
+          <h6>
+            Saini, R., Mussbacher, G., Guo, J.L.C., and Kienzle, J. (2020) A Neural Network Based Approach to Domain
+            Modelling
+            Relationships and Patterns Recognition. 10th International Model-Driven Requirements Engineering Workshop
+            (MoDRE 2020), Zurich, Switzerland, September 2020. IEEE CS, 78-82.
+            <a href="https://doi.org/10.1109/MoDRE51215.2020.00016">DOI: 10.1109/MoDRE51215.2020.00016.</a>
+          </h6>
+        </li>
+
+        <li>
+          <h6>
+            Saini, R., Mussbacher, G., Guo, J.L.C., and Kienzle, J. (2020) Towards Queryable and Traceable Domain
+            Models.
+            28th IEEE International Requirements Engineering Conference (RE 2020) - RE@NEXT! Track, Zurich, Switzerland,
+            August-September 2020. IEEE CS, 334-339. DOI: 10.1109/RE48521.2020.00044.
+            <a href="https://doi.org/10.1109/RE48521.2020.00044">DOI: 10.1109/RE48521.2020.00044.</a> <b>[Acceptance
+              rate: 31%]</b>
+          </h6>
+        </li>
+
+        <li>
+          <h6>
+            Saini, R., Mussbacher, G., Guo, J.L.C., and Kienzle, J. (2020) DoMoBOT: A Bot for Automated and Interactive
+            Domain Modelling. 2nd Artificial Intelligence and Model-driven Engineering Workshop (MDE Intelligence 2020),
+            Montreal, Canada, October 2020. ACM, article no. 45, 1-10.
+            <a href="https://doi.org/10.1145/3417990.3421385">
+              DOI: 10.1145/3417990.3421385.</a>
+          </h6>
+        </li>
+
+        <li>
+          <h6>
+            Saini, R. (2020) Artificial Intelligence Empowered Domain Modelling Bot. 23rd ACM/IEEE International
+            Conference on Model Driven Engineering Languages and Systems (MODELS 2020), Montreal, Canada, October 2020.
+            ACM, article no. 26, 1-6.
+            <a href="https://doi.org/10.1145/3417990.3419486">DOI: 10.1145/3417990.3419486.</a>
+          </h6>
+        </li>
+
+        <li>
+          <h6>
+            Saini, R., Mussbacher, G., Guo, J., and Kienzle, J. (2019) Modelling Bot - A Modelling Buddy.
+            Presentation, 11th Workshop on Modelling in Software Engineering (MiSE 2019), Montreal, Canada, May 2019.
+          </h6>
+        </li>
+
+        <li>
+          <h6>
+            Saini, R., Bali, S., and Mussbacher, G. (2019) Towards Web Collaborative Modelling for the User
+            Requirements Notation Using Eclipse Che and Theia IDE. 11th Workshop on Modelling in Software Engineering
+            (MiSE 2019), Montreal, Canada, May 2019. IEEE CS.
+            <a href="https://doi.org/10.1109/MiSE.2019.00010">DOI: 10.1109/MiSE.2019.00010.</a>
+          </h6>
+        </li>
+
+        <li>
+          <h6>
+            Saini, R., Mussbacher, G., Guo, J.L.C., and Kienzle, J. (2019) Teaching Modelling Literacy: An Artificial
+            Intelligence Approach. Educators Symposium at MODELS 2019, Munich, Germany, September 2019. IEEE CS,
+            714-719.
+            <a href="https://doi.org/10.1109/MODELS-C.2019.00108">DOI: 10.1109/MODELS-C.2019.00108.</a>
+          </h6>
+        </li>
+      </ol>
+    </div>
+
+    <div id="p_2022" class="p_tabcontent">
+      <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <ol type="1">
+        <li>
+          <h6>Saini, R., Mussbacher, G., Guo, J.L.C., and Kienzle, J. (2022) Machine Learning-based Incremental Learning
+            in Interactive Domain Modelling. Technical Track, ACM/IEEE 25th International Conference on Model Driven Engineering Languages and Systems (MODELS '22), October 23--28, 2022, Montreal, QC, Canada, ACM.
+            <a href="http://dx.doi.org/10.1145/3550355.3552421">DOI: 10.1145/3550355.3552421</a>. <b>[Acceptance
+              rate: 27%]</b>
+          </h6>
+        </li>
+
+
+        <li>
+          <h6>
+            Saini, R. (2022) Automated, Traceable, and Interactive Domain Modelling. ACM/IEEE 25th International Conference on Model Driven Engineering Languages and Systems (MODELS '22 Companion), October 23--28, 2022, Montreal, QC, Canada, ACM.
+            <a href="https://doi.org/10.1145/3550356.3552372">DOI: 10.1145/3550356.3552372</a>. <b> ACM Silver Medalist 🥈</b>
+          </h6>
+        </li>
+      </ol>
+    </div>
+
+
+    <div id="p_2021" class="p_tabcontent">
+      <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <ol type="1">
+        <li>
+          <h6>Saini, R., Mussbacher, G., Guo, J.L.C., and Kienzle, J. (2021) Automated, interactive, and traceable
+            domain modelling empowered by artificial intelligence. Software & Systems Modeling (SoSyM), Springer.
+            <a href="https://link.springer.com/article/10.1007/s10270-021-00942-6">DOI: 10.1007/s10270-021-00942-6</a>.
+          </h6>
+        </li>
+        <li>
+          <h6>Saini, R., Mussbacher, G., Guo, J.L.C., and Kienzle, J. (2021) DoMoBOT: An AI-Empowered Bot for Automated
+            and
+            Interactive Domain Modelling. Tool Demo, ACM/IEEE 24th International Conference on Model Driven Engineering
+            Languages
+            and Systems (MODELS 2021), Demo and Poster Sessions, Fukuoka, Japan, October 2021, ACM.
+            <a href="http://dx.doi.org/10.1109/MODELS-C53483.2021.00090">DOI: 10.1109/MODELS-C53483.2021.00090</a>.
+          </h6>
+        </li>
+
+        <li>
+          <h6>
+            Saini, R. and Mussbacher, G. (2021) Towards Conflict-Free Collaborative Modelling using VS Code Extensions.
+            1st
+            International Hands-on Workshop on Collaborative Modeling (HoWCoM 2021), Fukuoka, Japan, October 2021. ACM
+            <a href="https://doi.org/10.1109/MODELS-C53483.2021.00013">DOI: 10.1109/MODELS-C53483.2021.00013</a>.
+          </h6>
+        </li>
+
+        <li>
+          <h6>
+            Saini, R., Mussbacher, G., Guo, J.L.C., and Kienzle, J. (2021) Automated Traceability for Domain Modelling
+            Decisions
+            Empowered by Artificial Intelligence. 29th IEEE International Requirements Engineering Conference (RE 2021),
+            Notre Dame,
+            South Bend, Indiana, USA, September 2021. IEEE CS, 173-184.
+            <a href="https://doi.org/10.1109/RE51729.2021.00023">DOI: 10.1109/RE51729.2021.00023</a>.
+            <b>[Acceptance Rate - 29%]</b>.
+          </h6>
+        </li>
+
+        <li>
+          <h6>
+            Saini, R., Mussbacher, G., Guo, J.L.C., and Kienzle, J. (2021) DoMoBOT: A Modelling Bot for Automated and
+            Traceable
+            Domain Modelling. Tool Demo, 29th IEEE International Requirements Engineering Conference (RE 2021), Demo and
+            Poster
+            Sessions, Notre Dame, South Bend, Indiana, USA, September 2021, IEEE CS.
+            <a href="http://dx.doi.org/10.1109/RE51729.2021.00054">DOI: 10.1109/RE51729.2021.00054</a>.
+          </h6>
+        </li>
+
+        <li>
+          <h6>
+            Combemale, B., Kienzle, J., Mussbacher, G., Ali, H., Amyot, D., Bagherzadeh, M., Batot, E., Bencomo, N.,
+            Benni, B., Bruel,
+            J.-M., Cabot, J., Cheng, B.H.C., Collet, P., Engels, G., Heinrich, R., Jézéquel, J.-M., Koziolek, A.,
+            Mosser, S., Reussner, R.,
+            Sahraoui, H., Saini, R., Sallou, J., Stinckwich, S., Syriani, E., and Wimmer, M. (2021) A Hitchhiker’s Guide
+            to Model-Driven
+            Engineering for Data-Centric Systems. IEEE Software, IEEE 38(4):71–84.
+            <a href="https://ieeexplore.ieee.org/document/9094197/">DOI: 10.1109/MS.2020.2995125</a>.
+          </h6>
+        </li>
+      </ol>
+    </div>
+
+    <div id="p_2020" class="p_tabcontent">
+      <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <ol type="1">
+        <li>
+          <h6>
+            Saini, R., Mussbacher, G., Guo, J.L.C., and Kienzle, J. (2020) A Neural Network Based Approach to Domain
+            Modelling
+            Relationships and Patterns Recognition. 10th International Model-Driven Requirements Engineering Workshop
+            (MoDRE 2020), Zurich, Switzerland, September 2020. IEEE CS, 78-82.
+            <a href="https://doi.org/10.1109/MoDRE51215.2020.00016">DOI: 10.1109/MoDRE51215.2020.00016.</a>
+          </h6>
+        </li>
+
+        <li>
+          <h6>
+            Saini, R., Mussbacher, G., Guo, J.L.C., and Kienzle, J. (2020) Towards Queryable and Traceable Domain
+            Models.
+            28th IEEE International Requirements Engineering Conference (RE 2020) - RE@NEXT! Track, Zurich, Switzerland,
+            August-September 2020. IEEE CS, 334-339. DOI: 10.1109/RE48521.2020.00044.
+            <a href="https://doi.org/10.1109/RE48521.2020.00044">DOI: 10.1109/RE48521.2020.00044.</a> <b>[Acceptance
+              rate: 31%]</b>
+          </h6>
+        </li>
+
+        <li>
+          <h6>
+            Saini, R., Mussbacher, G., Guo, J.L.C., and Kienzle, J. (2020) DoMoBOT: A Bot for Automated and Interactive
+            Domain Modelling. 2nd Artificial Intelligence and Model-driven Engineering Workshop (MDE Intelligence 2020),
+            Montreal, Canada, October 2020. ACM, article no. 45, 1-10.
+            <a href="https://doi.org/10.1145/3417990.3421385">
+              DOI: 10.1145/3417990.3421385.</a>
+          </h6>
+        </li>
+
+        <li>
+          <h6>
+            Saini, R. (2020) Artificial Intelligence Empowered Domain Modelling Bot. 23rd ACM/IEEE International
+            Conference on Model Driven Engineering Languages and Systems (MODELS 2020), Montreal, Canada, October 2020.
+            ACM, article no. 26, 1-6.
+            <a href="https://doi.org/10.1145/3417990.3419486">DOI: 10.1145/3417990.3419486.</a>
+          </h6>
+        </li>
+      </ol>
+    </div>
+
+    <div id="p_2019" class="p_tabcontent">
+      <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <ol type="1">
+        <li>
+          <h6>
+            Saini, R., Mussbacher, G., Guo, J., and Kienzle, J. (2019) Modelling Bot - A Modelling Buddy.
+            Presentation, 11th Workshop on Modelling in Software Engineering (MiSE 2019), Montreal, Canada, May 2019.
+          </h6>
+        </li>
+
+        <li>
+          <h6>
+            Saini, R., Bali, S., and Mussbacher, G. (2019) Towards Web Collaborative Modelling for the User
+            Requirements Notation Using Eclipse Che and Theia IDE. 11th Workshop on Modelling in Software Engineering
+            (MiSE 2019), Montreal, Canada, May 2019. IEEE CS.
+            <a href="https://doi.org/10.1109/MiSE.2019.00010">DOI: 10.1109/MiSE.2019.00010.</a>
+          </h6>
+        </li>
+
+        <li>
+          <h6>
+            Saini, R., Mussbacher, G., Guo, J.L.C., and Kienzle, J. (2019) Teaching Modelling Literacy: An Artificial
+            Intelligence Approach. Educators Symposium at MODELS 2019, Munich, Germany, September 2019. IEEE CS,
+            714-719.
+            <a href="https://doi.org/10.1109/MODELS-C.2019.00108">DOI: 10.1109/MODELS-C.2019.00108.</a>
+          </h6>
+        </li>
+      </ol>
+    </div>
+    <br>
+    <br>
+    <br>
+  </div>
+
+
+
+  <!-- Second Parallax Effect with Mcgill Image -->
+  <!-- <div class="bgimg-2 w3-display-container w3-opacity-min">
+  </div> -->
+
+
+  <!-- Main Container (Teaching Section) -->
+  <div class="w3-content w3-container w3-padding-small" id="teaching">
+    <h3 class="w3-center"><br><br><b>Work Experience</b></h3>
+    <div class="tab">
+      <button class="tablinks" onclick="t_openTab(event, 't_all')">All</button>
+      <button class="tablinks" onclick="t_openTab(event, 't_2022')" id="t_defaultOpen">2022</button>
+      <button class="tablinks" onclick="t_openTab(event, 't_2021')">2021</button>
+      <button class="tablinks" onclick="t_openTab(event, 't_2020')">2020</button>
+      <button class="tablinks" onclick="t_openTab(event, 't_2019')">2019</button>
+      <button class="tablinks" onclick="t_openTab(event, 't_2018')">2018</button>
+      <button class="tablinks" onclick="t_openTab(event, 't_2017')">Before 2018</button>
+    </div>
+
+    <div id="t_all" class="t_tabcontent">
+      <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <ul type="b">
+        <h4><br><u>Student Intern at National Research Council Canada (Sep 2022 - Current)</u></h4>
+        <li>Building a semi-automated pipeline for processing and labeling non-trivial image datasets in the automotive industry.
+        </li>
+        <li>Constructing and training Convolutional Neural Networks in TensorFlow for identifying defects in vehicles.
+        </li>
+   
+
+        <h4><br><u>Student Intern at Bombardier Aerospace (Jan 2021 - Sep 2022)</u></h4>
+        <li>Led an initiative to enable predictive analytics where I built a pipeline using Scikit-Learn to process 3D data
+          and used classical Machine Learning models to predict aero coefficients.
+        </li>
+        <li>Solved a business problem of optimizing conceptual designs of aircraft using optimization algorithms.
+        </li>
+        <li>Designed the architecture and built a prototypical tool with microservices using Django and React.
+        </li>
+
+
+        <h4><br><u>Teaching assistant at McGill University (Winter 2021)</u></h4>
+        <li>Software Language Engineering <a href="https://www.mcgill.ca/study/2021-2022/courses/ecse-439">(ECSE
+            439)</a>
+        </li>
+
+        <h4><br><u>Teaching assistant at McGill University (Fall 2020)</u></h4>
+        <li>Introduction to Software Engineering <a href="https://www.mcgill.ca/study/2018-2019/courses/ecse-321">(ECSE
+            321)</a>
+        </li>
+        <li>Software Requirements Engineering (ECSE 326)</a>
+        </li>
+
+        <h4><br><u>Student Developer (Summer 2020 and 2019)</u></h4>
+        <li>Worked with the Red Hat team to bring the co-editing support in Eclipse Che 7.</li>
+        <li>Developed a VS Code extension to enable conflict-free collaborative development and modelling.</li>
+
+        <h4><br><u>Teaching assistant at McGill University (Fall 2019)</u></h4>
+        <li>Model-Based Programming (ECSE 223)</a>
+        </li>
+        <li>Introduction to Software Engineering <a href="https://www.mcgill.ca/study/2018-2019/courses/ecse-321">(ECSE
+            321)</a>
+        </li>
+        <li>Software Requirements Engineering <a href="https://www.mcgill.ca/study/2017-2018/courses/ecse-326">(ECSE
+            326)</a>
+        </li>
+
+        <h4><br><u>Teaching assistant at McGill University (Winter 2019)</u></h4>
+        <li>Introduction to Software Engineering <a href="https://www.mcgill.ca/study/2018-2019/courses/ecse-321">(ECSE
+            321)</a>
+        </li>
+        <li>Model-Based Programming <a href="https://www.mcgill.ca/study/2017-2018/courses/ecse-223">(ECSE 223)</a>
+        </li>
+
+        <h4><br><u>Teaching assistant at McGill University (Fall 2018)</u></h4>
+        <li>Introduction to Software Engineering <a href="https://www.mcgill.ca/study/2018-2019/courses/ecse-321">(ECSE
+            321)</a>
+        </li>
+        <li>Software Requirements Engineering <a href="https://www.mcgill.ca/study/2017-2018/courses/ecse-326">(ECSE
+            326)</a>
+        </li>
+
+        <h4><br><u>Software Analyst (Dec 2013 - May 2017)</u></h4>
+        <li>Provided consultancy in the module of SAP Human Resources to a multinational energy conglomerate.</a>
+        </li>
+        <li>Helped Portal and Finance consultants to solve critical issues using the ABAP debugging technique.</a>
+        </li>
+        <li>Enhanced payroll interfaces to reduce associated problem tickets to one-third</a>
+        </li>
+
+
+
+      </ol>
+    </div>
+
+    <div id="t_2022" class="t_tabcontent">
+      <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <ul type="b">
+        <h4><br><u>Student Intern at National Research Council Canada (Sep 2022 - Current)</u></h4>
+        <li>Building a semi-automated pipeline for processing and labeling non-trivial image datasets in the automotive industry.
+        </li>
+        <li>Constructing and training Convolutional Neural Networks in TensorFlow for identifying defects in vehicles.
+        </li>
+   
+
+        <h4><br><u>Student Intern at Bombardier Aerospace (Jan 2021 - Sep 2022)</u></h4>
+        <li>Led an initiative to enable predictive analytics where I built a pipeline using Scikit-Learn to process 3D data
+          and used classical Machine Learning models to predict aero coefficients.
+        </li>
+        <li>Solved a business problem of optimizing conceptual designs of aircraft using optimization algorithms.
+        </li>
+        <li>Designed the architecture and built a prototypical tool with microservices using Django and React.
+        </li>
+
+    </div>
+
+    <div id="t_2021" class="t_tabcontent">
+      <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <ul type="b">
+        <h4><br><u>Student Intern (Software Engineering and Machine Learning) at Bombardier Aerospace (Jan 2021 - Sep 2022)</u></h4>
+        <li>Led an initiative to enable predictive analytics where I built a pipeline using Scikit-Learn to process 3D data
+          and used classical Machine Learning models to predict aero coefficients.
+        </li>
+        <li>Solved a business problem of optimizing conceptual designs of aircraft using optimization algorithms.
+        </li>
+        <li>Designed the architecture and built a prototypical tool with microservices using Django and React.
+        </li>
+
+
+        <h4><br><u>Teaching assistant at McGill University (Winter 2021)</u></h4>
+        <li>Software Language Engineering <a href="https://www.mcgill.ca/study/2021-2022/courses/ecse-439">(ECSE
+            439)</a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="t_2020" class="t_tabcontent">
+      <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <ul type="b">
+        <h4><br><u>Teaching assistant at McGill University (Fall 2020)</u></h4>
+        <li>Introduction to Software Engineering <a href="https://www.mcgill.ca/study/2018-2019/courses/ecse-321">(ECSE
+            321)</a>
+        </li>
+        <li>Software Requirements Engineering (ECSE 326)</a>
+        </li>
+
+        <h4><br><u>Student Developer (Summer 2020 and 2019)</u></h4>
+        <li>Worked with the Red Hat team to bring the co-editing support in Eclipse Che 7.</li>
+        <li>Developed a VS Code extension to enable conflict-free collaborative development and modelling.</li>
+      </ul>
+    </div>
+
+    <div id="t_2019" class="t_tabcontent">
+      <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <ul type="b">
+        <h4><br><u>Student Developer (Summer 2020 and 2019)</u></h4>
+        <li>Worked with the Red Hat team to bring the co-editing support in Eclipse Che 7.</li>
+        <li>Developed a VS Code extension to enable conflict-free collaborative development and modelling.</li>
+
+        <h4><br><u>Teaching assistant at McGill University (Fall 2019)</u></h4>
+        <li>Model-Based Programming (ECSE 223)</a>
+        </li>
+        <li>Introduction to Software Engineering <a href="https://www.mcgill.ca/study/2018-2019/courses/ecse-321">(ECSE
+            321)</a>
+        </li>
+        <li>Software Requirements Engineering <a href="https://www.mcgill.ca/study/2017-2018/courses/ecse-326">(ECSE
+            326)</a>
+        </li>
+
+        <h4><br><u>Teaching assistant at McGill University (Winter 2019)</u></h4>
+        <li>Introduction to Software Engineering <a href="https://www.mcgill.ca/study/2018-2019/courses/ecse-321">(ECSE
+            321)</a>
+        </li>
+        <li>Model-Based Programming <a href="https://www.mcgill.ca/study/2017-2018/courses/ecse-223">(ECSE 223)</a>
+        </li>
+
+      </ul>
+    </div>
+
+    <div id="t_2018" class="t_tabcontent">
+      <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <ul type="b">
+        <h4><br><u>Teaching assistant at McGill University (Fall 2018)</u></h4>
+        <li>Introduction to Software Engineering <a href="https://www.mcgill.ca/study/2018-2019/courses/ecse-321">(ECSE
+            321)</a>
+        </li>
+        <li>Software Requirements Engineering <a href="https://www.mcgill.ca/study/2017-2018/courses/ecse-326">(ECSE
+            326)</a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="t_2017" class="t_tabcontent">
+      <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <ul type="b">
+        <h4><br><u>Software Analyst (Dec 2013 - May 2017)</u></h4>
+        <li>Provided consultancy in the module of SAP Human Resources to a multinational energy conglomerate.</a>
+        </li>
+        <li>Helped Portal and Finance consultants to solve critical issues using the ABAP debugging technique.</a>
+        </li>
+        <li>Enhanced payroll interfaces to reduce associated problem tickets to one-third</a>
+        </li>
+      </ul>
+    </div>
+
+    
+
+
+
+  <!-- Main Container (Blog Section) -->
+  <div class="w3-content w3-container w3-padding-small" id="blogs">
+    <h3 class="w3-center"><br><b>BLOGS</b></h3>
+    <!-- <div class="tab">
+      <button class="tablinks" onclick="t_openTab(event, 't_all')">All</button>
+      <button class="tablinks" onclick="t_openTab(event, 't_w2019')" id="t_defaultOpen">Eclipse Che<br></button>
+    </div> -->
+
+    <!-- <div class="w3-row-padding">
+      <br>
+      <div class="w3-third w3-container w3-margin-bottom">
+        <a href="https://rijul5.github.io/EclipseChe/"> <img src="img/blog1.png" alt="Norway" style="width:50%; margin-left: 25%;" 
+            class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <center>
+              <h4><b>Running Eclipse Che on Minikube<br><br><br><br></b></u></h4>
+            </center>
+        </a>
+      </div> -->
+
+      <div class="row-blogs">
+
+        <div class="column">
+          <a href="https://rijul5.github.io/DS-Challenger/"><img src="img/ds-challenger.png" alt="Demo - Traceable Modelling" style=" width:100%; height:100% ;border:groove">
+            <span style="color:white"><center><u>Data Science Challenger</u></center></span></a>
+        </div>
+
+        <div class="column">
+          <a href="https://github.com/Rijul5/Domain-Modelling-Traceability"><img src="img/knowledge_graph.png" alt="Demo - Interactive Modelling" style=" width:100%; height:100% ;border:groove">
+            <span style="color:white"><center><u>Traceability using Knowledge Graphs</u></center></span></a>
+        </div>
+
+        <div class="column">
+          <a href="https://github.com/Rijul5/vscode-turn"><img src="img/colab-modelling.png" alt="Collaborative Modelling" style=" width:100%; height:100% ;border:groove">
+            <span style="color:white"><center><u>Demo - Collaborative Modelling</center></u></span></a>
+        </div>
+
+        <div class="column">
+          <a href="https://github.com/Rijul5/DoMoBOT-Demo"><img src="img/domobot-demo-traceable.png" alt="Demo - Traceable Modelling" style=" width:100%; height:100% ;border:groove">
+            <span style="color:white"><center><u>Demo - Automated and Traceable Modelling</u></center></span></a>
+        </div>
+
+        <div class="column">
+          <a href="https://github.com/Rijul5/DoMoBOT-MODELS-Demo"><img src="img/domobot-demo-interactive.png" alt="Demo - Interactive Modelling" style=" width:100%; height:100% ;border:groove">
+            <span style="color:white"><center><u>Demo - Automated and Interactive Modelling</u></center></span></a>
+        </div>
+
+        <div class="column">
+          <a href="https://rijul5.github.io/GSoC-Eclipse-Che-2020/"><img src="img/gsoc-2020.png" alt="Google Summer of Code 2020" style=" width:100%; height:100% ;border:groove">
+            <span style="color:white"><center><u>VS Code Extension Atom Teletype (Part-II)</u></center></span></a>
+        </div>
+
+        <div class="column">
+          <a href="https://rijul5.github.io/GoogleSummerOfCode-Che-2019/"><img src="img/gosc-2019.png" alt="Google Summer of Code 2019" style=" width:100%; height:100% ;border:groove">
+            <span style="color:white"><center><u>VS Code Extension Atom Teletype (Part-I)</u></center></span></a>
+        </div>
+
+        <div class="column">
+          <a href="https://rijul5.github.io/EclipseChe/"><img src="img/eclipse_che.png" alt="Running Eclipse Che on Minikube" style=" width:100%; height:100% ;border:groove">
+          <span style="color:white"><center><u>Running Eclipse Che on Minikube</u></center></span></a>
+        </div>
+
+      </div>
+
+
+
+    <!-- </div>
+  </div> -->
+  </div>
+
+
+  <!-- Third Parallax Effect with McConnell Image -->
+  <!-- <div class="bgimg-3 w3-display-container w3-opacity-min">
+  </div> -->
+
+
+  <!-- Main Container (Contact Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="contact">
+    <h3 class="w3-center"><b>HOW TO FIND ME</b></h3>
+
+    <div class="w3-row w3-padding-32 w3-section">
+      <div class="w3-col m5 w3-container">
+        <a href="http://maps.mcgill.ca/?campus=DWT&txt=EN&id=McConnellEng"><img src="img/mcgill.jpeg"
+            class="w3-image w3-round" style="width:100%"></a>
+      </div>
+      <div class="w3-col m7 w3-panel">
+        <div class="w3-large w3-margin-bottom">
+          <!-- <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"><a
+              href="http://maps.mcgill.ca/?campus=DWT&txt=EN&id=McConnellEng"></i> Montréal, Québec, Canada</a><br> -->
+          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
+          rijul.saini@mail.mcgill.ca<br>
+        </div>
+        <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" id="name" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" id="message" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-right w3-section" type="submit" onclick="copyFunction()">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off" style="max-height:250px;">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <h4>Follow Me</h4>
+    <a class="w3-button w3-large w3-teal" href="https://scholar.google.ca/citations?user=CqUjT0gAAAAJ&hl=en&oi=ao" title="Google Scholar"><i
+        class="fa fa-google"></i></a>
+
+    <a class="w3-button w3-large w3-teal" href="https://www.linkedin.com/in/rijul-saini/"
+      title="Linkedin"><i class="fa fa-linkedin"></i></a>
+
+    <a class="w3-button w3-large w3-teal" href="https://github.com/Rijul5" title="Github"><i
+        class="fa fa-github"></i></a>
+    <p>Copyrights © 2023 All Rights Reserved by Rijul Saini</p>
+  </footer>
+
+  <script src="script/myScript.js"></script>
+
+</body>
+
+</html>
